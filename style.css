@@ -1,15 +1,18 @@
-body{
- text-align: center;
+body {
+    text-align: center;
     margin: 0;
-    padding-top: 800px;        
+    padding-top: 800px;
 }
-.profile{
+
+.profile {
     width: 175px;
     border-radius: 50%;
     margin-bottom: 50px;
-    border-color: blueviolet
+    border-color: blueviolet;
+    cursor: grabbing;
 }
-#welcome{
+
+#welcome {
     position: absolute;
     overflow: hidden;
     height: 800px;
@@ -19,50 +22,79 @@ body{
     right: 0;
     bottom: 0;
     opacity: 0.8;
-    background: linear-gradient(#24f2aa 0%,#FF6700 100%);
+    background: linear-gradient(#24f2aa 0%, #FF6700 100%);
     display: table;
     width: 100%;
-    height: 100%    
+    height: 100%;
+    z-index: 9;
 }
-.di{
+
+.di {
     display: table-cell;
     position: relative;
     text-align: center;
     vertical-align: middle;
 }
-h1{
+
+h1 {
     font-size: 40px;
     line-height: 1.2;
     font-family: inherit;
     font-weight: 300;
 }
-#name{
+
+#name {
     font-size: 30px;
     line-height: 1.2;
     font-family: cursive;
     font-weight: 300;
 }
-h2{
+
+h2 {
     font-size: 30px;
     line-height: 1.2;
     font-family: monospace;
     font-weight: 300;
 }
-#bio{
+
+#bio {
     padding: 50px;
     text-align: center;
     font-size: 40px;
-    background: linear-gradient(#24f2aa 0%,#FF6700 100%);
-    color: white; 
+    background: linear-gradient(#24f2aa 0%, #FF6700 100%);
+    color: white;
 }
-.line{
+
+.line {
     height: 6px;
     background-color: white;
     width: 70px;
-    margin: 8px auto;   
+    margin: 8px auto;
 }
-p{  font-size: 30px;
+
+p {
+    font-size: 30px;
     line-height: 1.2;
     font-family: cursive;
     margin: 25px auto;
+}
+
+.menu {
+    list-style: none;
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    z-index: 10;
+    cursor: pointer;
+}
+.links{
+    float: left;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
 }
